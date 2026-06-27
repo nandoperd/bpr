@@ -1,0 +1,36 @@
+# Dependencies
+vendor/
+node_modules/
+composer.phar
+
+# Environment
+.env
+.env.backup
+
+# CodeIgniter writable
+writable/
+public/uploads/
+public/foto/
+
+# OS Files
+Thumbs.db
+.DS_Store
+*.log
+*.cache
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Database backup
+*.sql
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.zip
+*.tar.gz
+*.rar
