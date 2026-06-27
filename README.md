@@ -61,3 +61,15 @@ Flag pada alur pengajuan ada pada kolom status_pengajuan di tabel data_pengajuan
 3. Direktur menerima pengajuan barang kemudian dapat melakuakan approval atau penolakan pengajuan barang. Jika ditolak, kembali ke step no.2 dan status_pengajuan update jadi 4, jika disetujui maka barang berhasil selesai proses pengajuan dengan efek :
 - status_pengajuan update jadi 3
 - update status pada tabel data barang menjadi 5 (Selesai diajukan)	
+
+## Clone Project
+
+1. Clone repository : git clone https://github.com/username/bpr-system.git
+2. Buka terminal lalu jalankan : 
+composer install --ignore-platform-reqs
+cp .env.example .env
+3. Buka cmd run as Administrator, lalu jalankan :
+cd C:\xampp\htdocs\bpr-github
+mkdir writable\cache writable\session writable\logs
+icacls writable /grant Everyone:F /T
+4. Create database db_bpr jika belum ada, jika sudah dibuat lakukan import database db-bpr.sql
